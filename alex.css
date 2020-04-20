@@ -90,36 +90,31 @@
 }
 
 #bio-header {
-    box-sizing: border-box;
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 2px;
-    background-color: white;
-    width: 400px;
-    float: left;
-    margin: 24px;
-    height:250px;
-    padding-top: 20px;
-
-    line-height: 1.5;
-    box-shadow: 0.5em 0 0 white,-0.5em 0 0 white;
-
     position: absolute;
     top: 65%;
     left: 33%;
-    margin-right: -50%;
     transform: translate(-30%, -50%);
+    box-sizing: border-box;
+
+    height: 250px;
+    width: 400px;
+    margin: 24px;
+    padding: 20px;
+
+    background-color: white;
+    font-size: 17px;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 .profile-img {
-    /* border-radius: 50%; */
-    margin: 24px;
-
     position: absolute;
     top: 65%;
     left: 60%;
     margin-right: -50%;
     transform: translate(-30%, -50%);
+    margin: 24px;
 }
 
 #contact-header {
