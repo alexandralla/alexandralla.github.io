@@ -1,34 +1,32 @@
 * {
+    scroll-behavior: smooth;
     font-family: 'Open Sans Condensed';
 }
 
-.nav-bar {
+.nav {
+    overflow: hidden;
     position: fixed;
-    width: 150px;
-    top: 70px;
-    right: 70px;
-
-    text-align: center;
+    top: 0;
+    width: 100%;
+    box-shadow: rgb(220, 220, 220) 0px 2px 10px;
+    background-color: white;
+}
+  
+.nav a {
     letter-spacing: 4px;
     font-size: 20px;
-  }
-  
-  .nav-bar a {
-    display: block;
-    padding: 12px;
+    padding: 20px;
 
-    background-color: white;
     color: black;
     text-decoration: none;
   }
   
-  .nav-bar a:hover {
+  .nav a:hover {
     background-color: #ccc;
   }
   
-  .nav-bar a.active {
-    background-color: teal;
-    color: white;
+  .nav a.active {
+    color: rgb(55, 112, 55);
   }
 
 .section-one {
@@ -44,17 +42,14 @@
 #section-two {
     width: 100%;
     height: 100vh;
-    background-color: rgb(168, 219, 172);
+    background-color: rgb(152, 182, 154);
 } 
 
 #section-three {
     width: 100%;
-    height: 900px;
-    background-color: rgb(216, 171, 171);
-    /* background-image: url(flowers.png); 
-    background-attachment: fixed;
-    background-size: cover;
-    background-blend-mode: soft-light; */
+    height: fit-content;
+    background-color: rgb(214, 152, 152);
+    padding: 30px;
 } 
 
 #section-four {
@@ -82,6 +77,7 @@
     background-color: white;
     padding: 12px;
     margin: 0px 0px 12px 0px;
+
 }
 
 #title-header {
@@ -121,7 +117,11 @@
 }
 
 #section-header-container {
-    padding: 20px 180px;
+    padding: 20px 290px 20px 180px;
+}
+
+#section-header-container p{
+    font-size: 25px;
 }
 
 .section-container {
@@ -133,46 +133,138 @@
     align-items: center;
 }
 
-.project-img {
-    margin: 10px;
-    padding: auto;
+.section-container h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 4px;
+    padding: 12px;
+    font-weight: bolder;
+    font-size: 45px;
 }
 
-.project-1 {
+.section-container p {
+    color: white;
+    text-align: center;
+    font-size: 23px;
+    padding: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.project-1{
+    margin: 15px;
     grid-column: 1/3;
     grid-row: 1/2;
     justify-self: right;
 }
 
-.project-1:hover {
-    opacity: .5;
-}
+.overlay-1 {
+    margin: 15px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    justify-self: right;
+    height: 290px;
+    width: 460px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: teal;
+  }
+  
+  .overlay-1:hover {
+    opacity: .9;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+  
 
 .project-2 {
+    margin: 15px;
     grid-column: 3/5;
     grid-row: 1/4;
     justify-self: left;
 }
 
+.overlay-2 {
+    margin: 15px;
+    grid-column: 3/5;
+    grid-row: 1/4;
+    justify-self: left;
+    height: 390px;
+    width: 410px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: teal;
+  }
+  
+.overlay-2:hover {
+    opacity: .9;
+    text-decoration: none;
+    color: white;
+    padding-top: 60px;
+}
+
 .project-3 {
+    margin: 15px;
     grid-column: 1/3;
     grid-row: 2/6;
     justify-self: right;
 }
 
+.overlay-3 {
+    margin: 15px;
+    grid-column: 1/3;
+    grid-row: 2/6;
+    justify-self: right;
+    height: 330px;
+    width: 460px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: teal;
+  }
+  
+  .overlay-3:hover {
+    opacity: .94;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0px;
+  }
+
 .project-4 {
+    margin: 15px;
     grid-column: 3/5;
     grid-row: 4/4;
     justify-self: left;
 }
 
+.overlay-4 {
+    margin: 15px;
+    grid-column: 3/5;
+    grid-row: 4/4;
+    justify-self: left;
+    height: 230px;
+    width: 410px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: teal;
+  }
+
+.overlay-4 p, h1{
+    margin: 0px;
+}
+  
+.overlay-4:hover {
+opacity: .9;
+text-decoration: none;
+color: white;
+}
+
 .main-header {
     font-size: 42px;
-    background-color: white;
-    padding: 16px;
+    /* padding: 16px; */
     letter-spacing: 4px;
-    margin: 20px auto;
+    /* margin: 20px auto; */
     width: fit-content;
+    color: white;
 }
 
 #contact-header {
