@@ -8,11 +8,6 @@
     
 }
 
-.container.content {
-   
-}
-
-
 .sidenav {
     height: 100%;
     width: 160px;
@@ -48,7 +43,7 @@
 #section-one {
     width: 100%;
     height: 100vh;
-    background-color: rgba(223, 178, 185, 0.644);
+    background-color: rgba(206, 172, 166, 0.938);
     background-image: url(leaves.jpg); 
     background-attachment: fixed;
     background-size: cover;
@@ -57,22 +52,30 @@
 
 #section-two {
     width: 100%;
-    height: 100vh;
-    background-color:  rgb(216, 213, 213);
-} 
-
-#section-three {
-    width: 100%;
-    height: 100vh;
-    background-color: darkgray;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: rgb(211, 149, 138);
     padding: 15px;
     display: flex;
 } 
 
+#section-three {
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+    padding: 20px 0px 50px 0px;
+    background-color: lightgray;
+} 
+
+
 #section-four {
     width: 100%;
-    height: 250px;
-    background-color: teal;
+    height: fit-content;
+    min-height: 100vh;
+    background-color: rgb(116, 141, 116);
+    color: white;
+    padding: 20px 0px 50px 0px;
+    font-size: 20px;
 } 
 
 .container#section-one-header {
@@ -118,6 +121,10 @@
 
 }
 
+#project-header-container {
+    margin: auto 0px;
+}
+
 #project-header-container h1 {
     color: white;
     text-align: center;
@@ -125,6 +132,29 @@
     letter-spacing: 4px;
     font-weight: bolder;
     font-size: 50px;
+}
+
+#project-header-container hr {
+    border: solid 1px white;
+}
+
+#project-header-container p {
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+#project-header-container button{
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+
+    color: rgb(46, 45, 45);
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 18px;
 }
 
 .project-container {
@@ -170,7 +200,7 @@
     width: 460px;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
   }
   
   .overlay-1:hover {
@@ -196,7 +226,7 @@
     width: 410px;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
   }
   
 .overlay-2:hover {
@@ -222,7 +252,7 @@
     width: 460px;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
   }
   
   .overlay-3:hover {
@@ -248,7 +278,7 @@
     width: 410px;
     opacity: 0;
     transition: .5s ease;
-    background-color: black;
+    background-color: rgb(46, 45, 45);
   }
 
 .overlay-4 p, h1{
@@ -261,6 +291,28 @@ text-decoration: none;
 color: white;
 }
 
+#section-three h1 {
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: rgb(110, 110, 110);
+}
+
+#section-three hr {
+    border: solid 1px rgb(185, 185, 185);
+    margin-bottom: 50px;
+}
+
+#section-four h1 {
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+}
 
 #contact-header {
     font-size:42px;
@@ -269,6 +321,13 @@ color: white;
     color: white;
     padding: 32px 8px;
     margin: 0px 0px 0px 85px;
+}
+
+.resume-img {
+    display: block;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
 }
 
 ul {

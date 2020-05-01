@@ -17,8 +17,8 @@
     <div class="main-container">
         <div class="sidenav">
             <a href="#section-one"><i class="far fa-user-circle"></i>  Home</a>
-            <a href="#section-two"><i class="far fa-building"></i>  Experiences</a>
-            <a href="#section-three"><i class="fa fa-laptop"></i>  Projects</a>
+            <a href="#section-two"><i class="fa fa-laptop"></i>  Projects</a>
+            <a href="#section-three"><i class="far fa-building"></i>  Resume</a>
             <a href="#section-four"><i class="far fa-address-card"></i> Contact</a>
         </div>
         <div class="content">
@@ -37,16 +37,12 @@
                 </div>
             </div>
             <div id=section-two>
-                <div id=section-header-container>
-                    <h2>EXPERIENCES</h2>
-                    <i class="fa fa-external-link-alt"></i>
-                </div>
-            </div>
-            <div id=section-three>
                 <div id=project-header-container>
-                    <h1>PROJECTS</h1>  
-                    <p>Something I love about programming is that it is the basis for everything. Everything can be coded into something. 
-                        Each project I pursue describes a bit of me and my interests. I enjoy coding to bring my own passions to life.</p> 
+                    <h1>PROJECTS</h1> <hr>
+                    <p>Programming is basis for everything.</p> 
+                    <p>Everything can be coded into something.</p>
+                    
+                    <button onclick="location.href='https://github.com/alexandralla'" target="_blank" type="button" class="btn btn-light">Visit my GitHub</button>
                 </div>
                 <div class=project-container>         
                     <img src='demo.gif' class="project-1" alt="project-1" height="290px" width="460px">
@@ -75,26 +71,30 @@
                     </a>
                 </div>
             </div>
+            <div id=section-three>
+                <div class=container>
+                    <h1>RESUME</h1><hr>
+                    <img class=resume-img src='resume.png' width=700px>
+                </div>
+            </div>
             <div id=section-four>
-                <p id=contact-header>CONTACT<p>
+                <div class=container>
+                    <h1>CONTACT</h1><hr>
+                
                 <div id=contact-info>
-                    <ul id=contact-list>
-                        <li class=contact-list-item>
-                            <a href="https://www.linkedin.com/in/alexandra-llamas-38825319a/">linked in</a>
-                        </li>
+                    <!-- <ul id=contact-list>
                         <li class=contact-list-item>
                             <a href="/">email</a>
                         </li>
                         <li class=contact-list-item>
-                            <a href="/">phone</a>
+                            <a href="https://www.linkedin.com/in/alexandra-llamas-38825319a/">linked in</a>
                         </li>
                         <li class=contact-list-item>
                             <a href="/">github</a>
                         </li>
-                    </ul>
-                    <div class="container mt-5">
-                        <div class="col-sm-8 mx-auto jumbotron">
-                        <h1 class="text-center">Contact Form</h1>
+                    </ul> -->
+                    <div class="container">
+                        <div class="mx-auto">
                         <div class="form-group">
                             <label>Name*</label>
                             <input type="text" class="form-control">
@@ -114,14 +114,14 @@
                             </label>
                         </div>
                         <div class="text-center">
-                            <button type="button" class="btn btn-primary text-left btn-lg mr-5 mt-5 px-5">Submit</button>
-                            <button type="button" class="btn btn-secondary text-right btn-lg mt-5 px-5">Reset</button>
+                            <button type="button" class="btn btn-light text-left btn-lg mr-5 mt-5 px-5">Submit</button>
+                            <button type="button" class="btn btn-dark text-right btn-lg mt-5 px-5">Reset</button>
                         </div>
                         </div>
                         </div>
                     </div>
                 </div>
-        </div>
+        </div></div>
     </div>
 </body>
 
