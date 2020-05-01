@@ -9,86 +9,119 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="alex.css">
     <link href='https://fonts.googleapis.com/css?family=Open Sans Condensed:300' rel='stylesheet'>
 </head>
 <body>
-    <div class=nav>
-        <a href="#section-one" class="active">Home</a>
-        <a href="#section-two">Experiences</a>
-        <a href="#section-three">Projects</a>
-        <a href="#section-four">Contact</a>
-    </div>
-    <div class=section-one> 
-        <div class=header-container>
-            <h2 id=name-header >HELLO, MY NAME IS ALEX</h2>
-            <h2 id=title-header>I'M A SOFTWARE DEVELOPER </h2>
+    <div class="main-container">
+        <div class="sidenav">
+            <a href="#section-one"><i class="far fa-user-circle"></i>  Home</a>
+            <a href="#section-two"><i class="far fa-building"></i>  Experiences</a>
+            <a href="#section-three"><i class="fa fa-laptop"></i>  Projects</a>
+            <a href="#section-four"><i class="far fa-address-card"></i> Contact</a>
         </div>
-        <span id=bio-header>Hello and welcome to my page! My name is Alexandra, but most people call me Alex for short.
-            I am a Portland State University student graduating in June 2020 with a computer science degree.
-            I offer 1.5 years of experience in software oriented roles, including proficiencies in front end
-            development, software automation, and back end development.
-        </span>
-        <img class=profile-img src=me.jpeg alt="profile photo" height=250px width=250px>
-    </div>
-    <div id=section-two>
-        <div id=section-header-container>
-            <h2 class=main-header>EXPERIENCES</h2>
-            <i class="fa fa-external-link-alt"></i>
+        <div class="content">
+            <div id=section-one> 
+                <div class=container id=section-one-header>
+                    <h2 id=name-header >HELLO, MY NAME IS ALEX</h2>
+                    <h2 id=title-header>I'M A SOFTWARE DEVELOPER </h2>
+                </div>
+                <div class=container id=section-one-bio>
+                    <span id=bio-header>Hello and welcome to my page! My name is Alexandra, but most people call me Alex for short.
+                        I am a Portland State University student graduating in June 2020 with a computer science degree.
+                        I offer 1.5 years of experience in software oriented roles, including proficiencies in front end
+                        development, software automation, and back end development.
+                    </span>
+                    <img class=bio-img src=me.jpeg alt="profile photo" height=250px width=250px>
+                </div>
+            </div>
+            <div id=section-two>
+                <div id=section-header-container>
+                    <h2>EXPERIENCES</h2>
+                    <i class="fa fa-external-link-alt"></i>
+                </div>
+            </div>
+            <div id=section-three>
+                <div id=project-header-container>
+                    <h1>PROJECTS</h1>  
+                    <p>Something I love about programming is that it is the basis for everything. Everything can be coded into something. 
+                        Each project I pursue describes a bit of me and my interests. I enjoy coding to bring my own passions to life.</p> 
+                </div>
+                <div class=project-container>         
+                    <img src='demo.gif' class="project-1" alt="project-1" height="290px" width="460px">
+                    <a href="https://github.com/victcab/CS410/tree/alex"  class="overlay-1" target="_blank">
+                        <h1>Pointillism Paint Filter</h1>
+                        <p>As they say, life imitates art. "Paint-ify" any image with this pointillism paint filter program!</p>
+                        <p>Technologies: Python3, OpenCV</p>
+                    </a>
+                    <img src='demo1.gif' class="project-2" alt="project-2" height="390px" width="410px">
+                    <a href="https://github.com/alexandralla/Speedy-Shooter"  class="overlay-2" target="_blank">
+                        <h1>Speedy Shooter</h1>
+                        <p>Shoot the enemy ships before they shoot you! Warning - this game is addictive.</p>
+                        <p>Technologies: Python3, Pygame</p>
+                    </a>
+                    <img src='demo2.gif' class="project-3" alt="project-3" height="330px" width="460px">
+                    <a href="https://github.com/alexandralla/music-charts"  class="overlay-3" target="_blank">
+                        <h1>Billboard Top 100</h1>
+                        <p>How does that song go again? Keep up with the latest hits with this music dashboard.</p>
+                        <p>Technologies: HTML, Jade, CSS, NodeJS, Express, Javascript</p>
+                    </a>
+                    <img src='demo3.gif' class="project-4" alt="project-4" height="230px" width="410px">
+                    <a href="https://github.com/alexandralla/fitness-app"  class="overlay-4" target="_blank">
+                        <h1>Get Fit</h1>
+                        <p>Wanna "Get Fit"? Start today with this full stack fitness app.</p>
+                        <p>Technologies: HTML, CSS, Javascript</p>
+                    </a>
+                </div>
+            </div>
+            <div id=section-four>
+                <p id=contact-header>CONTACT<p>
+                <div id=contact-info>
+                    <ul id=contact-list>
+                        <li class=contact-list-item>
+                            <a href="https://www.linkedin.com/in/alexandra-llamas-38825319a/">linked in</a>
+                        </li>
+                        <li class=contact-list-item>
+                            <a href="/">email</a>
+                        </li>
+                        <li class=contact-list-item>
+                            <a href="/">phone</a>
+                        </li>
+                        <li class=contact-list-item>
+                            <a href="/">github</a>
+                        </li>
+                    </ul>
+                    <div class="container mt-5">
+                        <div class="col-sm-8 mx-auto jumbotron">
+                        <h1 class="text-center">Contact Form</h1>
+                        <div class="form-group">
+                            <label>Name*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email*</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Submit your message:</label>
+                            <textarea class="form-control" rows="5"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="my-check">
+                            <label class="form-check-label" for="my-check">
+                            Sign up for the newsletter
+                            </label>
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary text-left btn-lg mr-5 mt-5 px-5">Submit</button>
+                            <button type="button" class="btn btn-secondary text-right btn-lg mt-5 px-5">Reset</button>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
         </div>
-    </div>
-    <div id=section-three>
-        <div id=section-header-container>
-            <h2 class=main-header>PROJECTS</h2>  
-            <p>Something I love about programming is that it is the basis for everything. Everything can be coded into something. 
-                Each project I pursue describes a bit of me and my interests. I enjoy coding to bring my own passions to life.</p> 
-        </div>
-        <div class=section-container>         
-            <img src='demo.gif' class="project-1" alt="project-1" height="290px" width="460px">
-            <a href="https://github.com/victcab/CS410/tree/alex"  class="overlay-1" target="_blank">
-                <h1>Pointillism Paint Filter</h1>
-                <p>As they say, life imitates art. "Paint-ify" any image with this pointillism paint filter program!</p>
-                <p>Technologies: Python3, OpenCV</p>
-            </a>
-            <img src='demo1.gif' class="project-2" alt="project-2" height="390px" width="410px">
-            <a href="https://github.com/alexandralla/Speedy-Shooter"  class="overlay-2" target="_blank">
-                <h1>Speedy Shooter</h1>
-                <p>Shoot the enemy ships before they shoot you! Warning - this game is addictive.</p>
-                <p>Technologies: Python3, Pygame</p>
-            </a>
-            <img src='demo2.gif' class="project-3" alt="project-3" height="330px" width="460px">
-            <a href="https://github.com/alexandralla/music-charts"  class="overlay-3" target="_blank">
-                <h1>Billboard Top 100</h1>
-                <p>How does that song go again? Keep up with the latest hits with this music dashboard.</p>
-                <p>Technologies: HTML, Jade, CSS, NodeJS, Express, Javascript</p>
-            </a>
-            <img src='demo3.gif' class="project-4" alt="project-4" height="230px" width="410px">
-            <a href="https://github.com/alexandralla/fitness-app"  class="overlay-4" target="_blank">
-                <h1>Get Fit</h1>
-                <p>Wanna "Get Fit"? Start today with this full stack fitness app.</p>
-                <p>Technologies: HTML, CSS, Javascript</p>
-            </a>
-        </div>
-    </div>
-    <div id=section-four>
-        <p id=contact-header>CONTACT<p>
-        <div id=contact-info>
-            <ul id=contact-list>
-                <li class=contact-list-item>
-                    <a href="https://www.linkedin.com/in/alexandra-llamas-38825319a/">linked in</a>
-                </li>
-                <li class=contact-list-item>
-                    <a href="/">email</a>
-                </li>
-                <li class=contact-list-item>
-                    <a href="/">phone</a>
-                </li>
-                <li class=contact-list-item>
-                    <a href="/">github</a>
-                </li>
-            </ul>
-        </div>
-        
     </div>
 </body>
 
